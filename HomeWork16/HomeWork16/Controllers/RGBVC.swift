@@ -8,6 +8,8 @@
 import UIKit
 
 class RGBVC: UIViewController {
+    
+    weak var delegate: ColorToChangeVCDelegate?
 
     @IBOutlet weak var redSlider: UISlider!
     @IBOutlet weak var redTF: UITextField!
@@ -81,7 +83,8 @@ class RGBVC: UIViewController {
         color.backgroundColor = UIColor(red: CGFloat(volRed ?? 0), green: CGFloat(volGreen ?? 0), blue: CGFloat(volBlue ?? 0), alpha: CGFloat(shortValueOpacity))
     }
     
-    
     @IBAction func doneBtnTapped() {
+        delegate?.update(color: color.backgroundColor!)
+        navigationController?.popToRootViewController(animated: true)
     }
 }

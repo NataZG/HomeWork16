@@ -25,6 +25,11 @@
                                     <segue destination="N2b-fD-x1h" kind="show" identifier="goToRGB" id="ecB-6x-VEI"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gPj-ZX-HCg">
+                                <rect key="frame" x="87" y="265" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -36,6 +41,7 @@
                     <navigationItem key="navigationItem" id="nVy-7V-Qc6"/>
                     <connections>
                         <outlet property="changeColor" destination="pxc-uQ-iW9" id="ffk-RE-jhM"/>
+                        <outlet property="viewColor" destination="gPj-ZX-HCg" id="hqE-VT-I9a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
