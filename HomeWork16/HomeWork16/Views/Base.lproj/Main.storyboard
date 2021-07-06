@@ -92,16 +92,11 @@
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="XyO-u8-XY9">
                                         <rect key="frame" x="-2" y="39.5" width="308" height="31"/>
                                         <connections>
-                                            <action selector="redSliderAction:" destination="N2b-fD-x1h" eventType="valueChanged" id="gE9-ht-22L"/>
+                                            <action selector="greenSliderAction:" destination="N2b-fD-x1h" eventType="valueChanged" id="wPa-nh-cMl"/>
                                         </connections>
                                     </slider>
                                 </subviews>
                             </stackView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="natural" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="HxP-Y5-8CI">
-                                <rect key="frame" x="348" y="376" width="41" height="35"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="kxd-mO-w0Z">
                                 <rect key="frame" x="25" y="448" width="304" height="69.5"/>
                                 <subviews>
@@ -114,16 +109,11 @@
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="9QH-aj-rdC">
                                         <rect key="frame" x="-2" y="39.5" width="308" height="31"/>
                                         <connections>
-                                            <action selector="redSliderAction:" destination="N2b-fD-x1h" eventType="valueChanged" id="4De-Ec-Lqx"/>
+                                            <action selector="blueSliderAction:" destination="N2b-fD-x1h" eventType="valueChanged" id="LQh-iM-gU6"/>
                                         </connections>
                                     </slider>
                                 </subviews>
                             </stackView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="natural" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="hjd-kr-xAT">
-                                <rect key="frame" x="348" y="482" width="41" height="35"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="Ddf-zD-nMa">
                                 <rect key="frame" x="25" y="562" width="304" height="69.5"/>
                                 <subviews>
@@ -136,13 +126,13 @@
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="e7g-ug-U5n">
                                         <rect key="frame" x="-2" y="39.5" width="308" height="31"/>
                                         <connections>
-                                            <action selector="redSliderAction:" destination="N2b-fD-x1h" eventType="valueChanged" id="pnu-NS-06u"/>
+                                            <action selector="opacitySliderAction:" destination="N2b-fD-x1h" eventType="valueChanged" id="BDZ-h0-b64"/>
                                         </connections>
                                     </slider>
                                 </subviews>
                             </stackView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0%" textAlignment="natural" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="nbY-cV-Dlq">
-                                <rect key="frame" x="331" y="596" width="58" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="natural" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="nbY-cV-Dlq">
+                                <rect key="frame" x="348.5" y="596" width="40.5" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -150,29 +140,39 @@
                                 <rect key="frame" x="25" y="648" width="364" height="71"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                             </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="natural" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="gJk-cV-GGs">
+                                <rect key="frame" x="348" y="375" width="41" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="natural" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="Jq5-0R-Olg">
+                                <rect key="frame" x="348" y="482" width="41" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jyx-hy-7M3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="hjd-kr-xAT" firstAttribute="leading" secondItem="kxd-mO-w0Z" secondAttribute="trailing" constant="19" id="33m-aT-qRd"/>
                             <constraint firstItem="jyx-hy-7M3" firstAttribute="bottom" secondItem="q0U-Ax-RZp" secondAttribute="bottom" constant="38" id="5Yh-ru-zuh"/>
-                            <constraint firstItem="jyx-hy-7M3" firstAttribute="trailing" secondItem="HxP-Y5-8CI" secondAttribute="trailing" constant="25" id="5wz-HH-vyH"/>
                             <constraint firstItem="Ddf-zD-nMa" firstAttribute="top" secondItem="kxd-mO-w0Z" secondAttribute="bottom" constant="44.5" id="6Yr-r6-JNW"/>
                             <constraint firstItem="jyx-hy-7M3" firstAttribute="trailing" secondItem="nbY-cV-Dlq" secondAttribute="trailing" constant="25" id="DQl-Gd-LX7"/>
+                            <constraint firstItem="IUJ-eh-3AY" firstAttribute="top" secondItem="nbY-cV-Dlq" secondAttribute="bottom" constant="18" id="Eah-Sd-n02"/>
+                            <constraint firstItem="nbY-cV-Dlq" firstAttribute="top" secondItem="Jq5-0R-Olg" secondAttribute="bottom" constant="79" id="F9C-Sd-Kib"/>
                             <constraint firstItem="OLY-7w-OIf" firstAttribute="top" secondItem="jyx-hy-7M3" secondAttribute="top" constant="144" id="HoT-CH-qFE"/>
                             <constraint firstItem="kxd-mO-w0Z" firstAttribute="trailing" secondItem="Ddf-zD-nMa" secondAttribute="trailing" id="Jkj-dX-jci"/>
                             <constraint firstItem="lj1-CR-JRd" firstAttribute="top" secondItem="jyx-hy-7M3" secondAttribute="top" constant="179" id="JyL-5k-zfY"/>
                             <constraint firstItem="q0U-Ax-RZp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="jyx-hy-7M3" secondAttribute="leading" id="Nc3-Ws-l4i"/>
                             <constraint firstItem="jyx-hy-7M3" firstAttribute="trailing" secondItem="q0U-Ax-RZp" secondAttribute="trailing" constant="161" id="OPG-Ky-aCb"/>
-                            <constraint firstItem="hjd-kr-xAT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nbY-cV-Dlq" secondAttribute="leading" id="Odj-OR-eaB"/>
-                            <constraint firstItem="kxd-mO-w0Z" firstAttribute="top" secondItem="HxP-Y5-8CI" secondAttribute="bottom" constant="37" id="P6z-lF-Cc1"/>
                             <constraint firstItem="jyx-hy-7M3" firstAttribute="trailing" secondItem="kxd-mO-w0Z" secondAttribute="trailing" constant="85" id="PmK-zR-cOA"/>
+                            <constraint firstItem="nbY-cV-Dlq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ddf-zD-nMa" secondAttribute="trailing" constant="2" id="PrE-gi-E9Z"/>
+                            <constraint firstItem="gJk-cV-GGs" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kd4-Qy-mXE" secondAttribute="trailing" constant="8" symbolic="YES" id="QiW-73-kpw"/>
                             <constraint firstItem="jyx-hy-7M3" firstAttribute="trailing" secondItem="lj1-CR-JRd" secondAttribute="trailing" constant="25" id="RHz-oV-ysS"/>
                             <constraint firstItem="IUJ-eh-3AY" firstAttribute="top" secondItem="Ddf-zD-nMa" secondAttribute="bottom" constant="16.5" id="Sru-iR-Mal"/>
-                            <constraint firstItem="hjd-kr-xAT" firstAttribute="top" secondItem="HxP-Y5-8CI" secondAttribute="bottom" constant="71" id="T0h-cS-iuC"/>
                             <constraint firstItem="OLY-7w-OIf" firstAttribute="leading" secondItem="jyx-hy-7M3" secondAttribute="leading" constant="25" id="UXV-P3-IIu"/>
+                            <constraint firstItem="nbY-cV-Dlq" firstAttribute="trailing" secondItem="Jq5-0R-Olg" secondAttribute="trailing" id="UyQ-Qz-4YW"/>
                             <constraint firstItem="kd4-Qy-mXE" firstAttribute="top" secondItem="OLY-7w-OIf" secondAttribute="bottom" constant="39.5" id="Xy4-pE-YIc"/>
-                            <constraint firstItem="nbY-cV-Dlq" firstAttribute="top" secondItem="hjd-kr-xAT" secondAttribute="bottom" constant="79" id="d89-qy-Imv"/>
+                            <constraint firstItem="Jq5-0R-Olg" firstAttribute="top" secondItem="gJk-cV-GGs" secondAttribute="bottom" constant="72" id="d7x-7C-8za"/>
                             <constraint firstItem="lj1-CR-JRd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="jyx-hy-7M3" secondAttribute="leading" id="e0E-UE-L2s"/>
                             <constraint firstItem="jyx-hy-7M3" firstAttribute="trailing" secondItem="kd4-Qy-mXE" secondAttribute="trailing" constant="85" id="eeH-kI-UTB"/>
                             <constraint firstItem="q0U-Ax-RZp" firstAttribute="top" secondItem="IUJ-eh-3AY" secondAttribute="bottom" constant="57" id="egP-al-KOv"/>
@@ -182,19 +182,19 @@
                             <constraint firstItem="kd4-Qy-mXE" firstAttribute="leading" secondItem="jyx-hy-7M3" secondAttribute="leading" constant="25" id="nRd-KH-h5G"/>
                             <constraint firstItem="IUJ-eh-3AY" firstAttribute="leading" secondItem="jyx-hy-7M3" secondAttribute="leading" constant="25" id="pbi-m9-u8F"/>
                             <constraint firstItem="kxd-mO-w0Z" firstAttribute="leading" secondItem="jyx-hy-7M3" secondAttribute="leading" constant="25" id="pqt-du-d9T"/>
-                            <constraint firstItem="jyx-hy-7M3" firstAttribute="trailing" secondItem="hjd-kr-xAT" secondAttribute="trailing" constant="25" id="xCa-lF-pbJ"/>
+                            <constraint firstItem="nbY-cV-Dlq" firstAttribute="trailing" secondItem="gJk-cV-GGs" secondAttribute="trailing" id="sFU-cU-8Rv"/>
+                            <constraint firstItem="Jq5-0R-Olg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kxd-mO-w0Z" secondAttribute="trailing" constant="8" symbolic="YES" id="wid-9k-8zY"/>
                             <constraint firstItem="jyx-hy-7M3" firstAttribute="trailing" secondItem="IUJ-eh-3AY" secondAttribute="trailing" constant="25" id="xjN-nz-bje"/>
-                            <constraint firstItem="HxP-Y5-8CI" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kd4-Qy-mXE" secondAttribute="trailing" constant="8" symbolic="YES" id="y7Q-im-U4l"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gSK-gQ-E6r"/>
                     <connections>
                         <outlet property="blueSlider" destination="9QH-aj-rdC" id="NHT-7K-5Fa"/>
-                        <outlet property="blueTF" destination="hjd-kr-xAT" id="7T5-or-cTb"/>
+                        <outlet property="blueTF" destination="Jq5-0R-Olg" id="0Kh-ZN-gez"/>
                         <outlet property="color" destination="IUJ-eh-3AY" id="WNO-UK-DVc"/>
                         <outlet property="doneBtn" destination="q0U-Ax-RZp" id="QfH-15-cRd"/>
                         <outlet property="greenSlider" destination="XyO-u8-XY9" id="bqS-ou-ilu"/>
-                        <outlet property="greenTF" destination="HxP-Y5-8CI" id="zBS-RO-99h"/>
+                        <outlet property="greenTF" destination="gJk-cV-GGs" id="2BL-Kq-hk9"/>
                         <outlet property="opacitySlider" destination="e7g-ug-U5n" id="Fha-Ze-AM7"/>
                         <outlet property="opacityTF" destination="nbY-cV-Dlq" id="pyD-jq-cfj"/>
                         <outlet property="redSlider" destination="WSQ-1R-HxW" id="GsJ-eJ-ZIR"/>
