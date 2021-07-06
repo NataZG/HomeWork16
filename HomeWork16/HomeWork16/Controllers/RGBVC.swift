@@ -24,6 +24,7 @@ class RGBVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpView()
 
         // Do any additional setup after loading the view.
     }
@@ -81,6 +82,10 @@ class RGBVC: UIViewController {
         let shortValueOpacity = round(Double(sender.value) * 10) / 10
         opacityTF.text = String(shortValueOpacity)
         color.backgroundColor = UIColor(red: CGFloat(volRed ?? 0), green: CGFloat(volGreen ?? 0), blue: CGFloat(volBlue ?? 0), alpha: CGFloat(shortValueOpacity))
+    }
+    
+    private func setUpView() {
+        self.color.layer.cornerRadius = self.color.bounds.height / 4
     }
     
     @IBAction func doneBtnTapped() {
