@@ -16,7 +16,7 @@ class ColorToChangeVC: UIViewController {
 
     @IBOutlet weak var changeColor: UIButton!
     @IBOutlet weak var viewColor: UIView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -32,7 +32,7 @@ class ColorToChangeVC: UIViewController {
 }
 
 extension ColorToChangeVC: ColorToChangeVCDelegate {
-    func update(color: UIColor){
+    func update(color: UIColor) {
         viewColor.backgroundColor = color
     }
 
