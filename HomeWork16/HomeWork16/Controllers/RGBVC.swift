@@ -84,6 +84,38 @@ class RGBVC: UIViewController {
         color.backgroundColor = UIColor(red: CGFloat(volRed ?? 0), green: CGFloat(volGreen ?? 0), blue: CGFloat(volBlue ?? 0), alpha: CGFloat(shortValueOpacity))
     }
 
+
+    @IBAction func redTFAction(_ sender: Any) {
+        if let text = redTF.text,
+            let vol = Float(text) {
+            redSlider.value = vol
+        }
+    }
+
+
+    @IBAction func greenTFAction(_ sender: Any) {
+        if let text = greenTF.text,
+            let vol = Float(text) {
+            greenSlider.value = vol
+        }
+    }
+
+
+    @IBAction func blueTFAction(_ sender: Any) {
+        if let text = blueTF.text,
+            let vol = Float(text) {
+            blueSlider.value = vol
+        }
+    }
+
+
+    @IBAction func opacityTFAction(_ sender: Any) {
+        if let text = opacityTF.text,
+            let vol = Float(text) {
+            opacitySlider.value = vol
+        }
+    }
+
     private func setUpView() {
         self.color.layer.cornerRadius = self.color.bounds.height / 4
     }

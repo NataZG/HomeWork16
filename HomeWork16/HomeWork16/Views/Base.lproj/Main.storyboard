@@ -86,6 +86,9 @@
                                 <rect key="frame" x="348" y="267" width="41" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="redTFAction:" destination="N2b-fD-x1h" eventType="editingDidEnd" id="EYZ-jd-gty"/>
+                                </connections>
                             </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="kd4-Qy-mXE">
                                 <rect key="frame" x="25" y="344" width="304" height="72.5"/>
@@ -142,6 +145,9 @@
                                 <rect key="frame" x="348.5" y="608" width="40.5" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="opacityTFAction:" destination="N2b-fD-x1h" eventType="valueChanged" id="34O-sg-fow"/>
+                                </connections>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IUJ-eh-3AY">
                                 <rect key="frame" x="25" y="660" width="364" height="48"/>
@@ -151,11 +157,17 @@
                                 <rect key="frame" x="348" y="387" width="41" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="greenTFAction:" destination="N2b-fD-x1h" eventType="editingDidEnd" id="48f-C3-yN0"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="natural" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="Jq5-0R-Olg">
                                 <rect key="frame" x="348" y="494" width="41" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="blueTFAction:" destination="N2b-fD-x1h" eventType="editingDidEnd" id="Ikf-hY-Zk0"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0U-Ax-RZp">
                                 <rect key="frame" x="156" y="766" width="113" height="59"/>
