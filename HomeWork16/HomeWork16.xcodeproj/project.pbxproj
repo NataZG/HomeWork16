@@ -12,6 +12,8 @@
 		41FF019426942F8900FFBC54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41FF019226942F8900FFBC54 /* Main.storyboard */; };
 		41FF019626942F8E00FFBC54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41FF019526942F8E00FFBC54 /* Assets.xcassets */; };
 		41FF019926942F8E00FFBC54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41FF019726942F8E00FFBC54 /* LaunchScreen.storyboard */; };
+		41FF01A6269437C600FFBC54 /* RGBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF01A5269437C600FFBC54 /* RGBVC.swift */; };
+		41FF01A82694381000FFBC54 /* ColorToChangeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF01A72694381000FFBC54 /* ColorToChangeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		41FF019526942F8E00FFBC54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41FF019826942F8E00FFBC54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41FF019A26942F8E00FFBC54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41FF01A5269437C600FFBC54 /* RGBVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBVC.swift; sourceTree = "<group>"; };
+		41FF01A72694381000FFBC54 /* ColorToChangeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorToChangeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 		41FF01A02694305E00FFBC54 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				41FF01A5269437C600FFBC54 /* RGBVC.swift */,
+				41FF01A72694381000FFBC54 /* ColorToChangeVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -159,6 +165,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				41FF018D26942F8900FFBC54 /* AppDelegate.swift in Sources */,
+				41FF01A82694381000FFBC54 /* ColorToChangeVC.swift in Sources */,
+				41FF01A6269437C600FFBC54 /* RGBVC.swift in Sources */,
 				41FF018F26942F8900FFBC54 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
